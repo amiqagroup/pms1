@@ -1,2 +1,1 @@
-pytest
-flake8
+# Development requirements removed by request
