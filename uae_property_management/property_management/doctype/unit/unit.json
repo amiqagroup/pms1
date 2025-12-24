@@ -1,0 +1,38 @@
+{
+  "doctype": "DocType",
+  "name": "Unit",
+  "module": "Property Management",
+  "fields": [
+    { "fieldname": "unit_code", "fieldtype": "Data", "reqd": 1 },
+    {
+      "fieldname": "property",
+      "fieldtype": "Link",
+      "options": "Property",
+      "reqd": 1
+    },
+    {
+      "fieldname": "unit_type",
+      "fieldtype": "Select",
+      "options": "Studio\n1BR\n2BR\nShop\nOffice\nWarehouse"
+    },
+    { "fieldname": "floor", "fieldtype": "Data" },
+    { "fieldname": "size_sqft", "fieldtype": "Float" },
+    { "fieldname": "bedrooms", "fieldtype": "Int" },
+    { "fieldname": "bathrooms", "fieldtype": "Int" },
+    { "fieldname": "parking_slots", "fieldtype": "Int" },
+    {
+      "fieldname": "furnishing",
+      "fieldtype": "Select",
+      "options": "Furnished\nSemi\nUnfurnished"
+    },
+    {
+      "fieldname": "current_status",
+      "fieldtype": "Select",
+      "options": "Vacant\nReserved\nOccupied\nMaintenance",
+      "default": "Vacant"
+    },
+    { "fieldname": "default_rent_amount", "fieldtype": "Currency" },
+    { "fieldname": "vat_applicable", "fieldtype": "Check", "default": 1 },
+    { "fieldname": "maintenance_fee", "fieldtype": "Currency" }
+  ]
+}

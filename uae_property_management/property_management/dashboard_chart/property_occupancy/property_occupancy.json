@@ -1,0 +1,25 @@
+{
+  "chart_name": "Property Occupancy %",
+  "chart_type": "Percentage",
+  "doctype": "Dashboard Chart",
+  "is_standard": "Yes",
+  "document_type": "Unit",
+  "timespan": "Last Month",
+  "time_interval": "Monthly",
+  "value_based_on": "",
+  "filters_json": "{}",
+  "dynamic_filters_json": "[]",
+  "group_by_type": "",
+  "module": "Property Management",
+  "chart_type_data": {
+    "labels": ["Occupied", "Vacant"],
+    "datasets": [
+      {
+        "name": "Units",
+        "values": []
+      }
+    ]
+  },
+  "custom_options": "",
+  "type": "Dashboard Chart"
+}

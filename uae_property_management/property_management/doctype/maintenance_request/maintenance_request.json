@@ -1,0 +1,22 @@
+{
+  "doctype": "DocType",
+  "name": "Maintenance Request",
+  "fields": [
+    { "fieldname": "property", "fieldtype": "Link", "options": "Property" },
+    { "fieldname": "unit", "fieldtype": "Link", "options": "Unit" },
+    { "fieldname": "tenant", "fieldtype": "Link", "options": "Tenant" },
+    { "fieldname": "issue_type", "fieldtype": "Data" },
+    {
+      "fieldname": "priority",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "options": "Open\nIn Progress\nCompleted\nCancelled"
+    },
+    { "fieldname": "cost", "fieldtype": "Currency" },
+    { "fieldname": "chargeable_to_tenant", "fieldtype": "Check" }
+  ]
+}

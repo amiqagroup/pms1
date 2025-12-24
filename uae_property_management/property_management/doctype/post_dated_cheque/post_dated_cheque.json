@@ -1,0 +1,55 @@
+{
+  "doctype": "DocType",
+  "name": "Post Dated Cheque",
+  "module": "Property Management",
+  "autoname": "PDC-.#####",
+  "fields": [
+    {
+      "fieldname": "lease_contract",
+      "fieldtype": "Link",
+      "options": "Lease Contract",
+      "label": "Lease Contract",
+      "reqd": 1
+    },
+    {
+      "fieldname": "cheque_number",
+      "fieldtype": "Data",
+      "label": "Cheque Number",
+      "reqd": 1
+    },
+    { "fieldname": "bank_name", "fieldtype": "Data", "label": "Bank Name" },
+    { "fieldname": "cheque_date", "fieldtype": "Date", "label": "Cheque Date" },
+    { "fieldname": "amount", "fieldtype": "Currency", "label": "Amount" },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "options": "Pending\nDeposited\nCleared\nBounced\nReplaced\nCancelled",
+      "default": "Pending"
+    },
+    {
+      "fieldname": "sales_invoice",
+      "fieldtype": "Link",
+      "options": "Sales Invoice",
+      "label": "Related Sales Invoice"
+    },
+    {
+      "fieldname": "payment_entry",
+      "fieldtype": "Link",
+      "options": "Payment Entry",
+      "label": "Payment Entry"
+    },
+    {
+      "fieldname": "replaced_by",
+      "fieldtype": "Link",
+      "options": "Post Dated Cheque",
+      "label": "Replaced By"
+    },
+    {
+      "fieldname": "replaces",
+      "fieldtype": "Link",
+      "options": "Post Dated Cheque",
+      "label": "Replaces"
+    },
+    { "fieldname": "notes", "fieldtype": "Small Text", "label": "Notes" }
+  ]
+}

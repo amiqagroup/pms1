@@ -1,0 +1,8 @@
+{
+  "report_name": "Rental Income by Property",
+  "doctype": "Sales Invoice",
+  "is_standard": "Yes",
+  "report_type": "Script Report",
+  "ref_doctype": "Sales Invoice",
+  "module": "Property Management"
+}

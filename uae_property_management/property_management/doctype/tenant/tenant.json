@@ -1,0 +1,28 @@
+{
+  "doctype": "DocType",
+  "name": "Tenant",
+  "module": "Property Management",
+  "fields": [
+    {
+      "fieldname": "tenant_type",
+      "fieldtype": "Select",
+      "options": "Individual\nCompany"
+    },
+    { "fieldname": "full_name", "fieldtype": "Data", "reqd": 1 },
+    { "fieldname": "emirates_id", "fieldtype": "Data" },
+    { "fieldname": "trade_license_no", "fieldtype": "Data" },
+    { "fieldname": "passport_no", "fieldtype": "Data" },
+    { "fieldname": "nationality", "fieldtype": "Data" },
+    { "fieldname": "phone", "fieldtype": "Data" },
+    { "fieldname": "email", "fieldtype": "Data" },
+    { "fieldname": "address", "fieldtype": "Small Text" },
+    { "fieldname": "emergency_contact", "fieldtype": "Data" },
+    { "fieldname": "trn", "fieldtype": "Data" },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "options": "Active\nBlacklisted",
+      "default": "Active"
+    }
+  ]
+}

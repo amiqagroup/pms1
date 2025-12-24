@@ -1,0 +1,8 @@
+{
+  "report_name": "Vacant Units",
+  "doctype": "Unit",
+  "is_standard": "Yes",
+  "report_type": "Script Report",
+  "ref_doctype": "Unit",
+  "module": "Property Management"
+}

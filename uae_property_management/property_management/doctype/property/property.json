@@ -1,0 +1,39 @@
+{
+  "doctype": "DocType",
+  "name": "Property",
+  "module": "Property Management",
+  "fields": [
+    {
+      "fieldname": "property_code",
+      "fieldtype": "Data",
+      "label": "Property Code",
+      "reqd": 1
+    },
+    {
+      "fieldname": "property_name",
+      "fieldtype": "Data",
+      "label": "Property Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "property_type",
+      "fieldtype": "Select",
+      "options": "Residential\nCommercial\nMixed"
+    },
+    { "fieldname": "owner", "fieldtype": "Link", "options": "Customer" },
+    {
+      "fieldname": "emirate",
+      "fieldtype": "Select",
+      "options": "Dubai\nAbu Dhabi\nSharjah\nAjman\nRAK\nUAQ\nFujairah"
+    },
+    { "fieldname": "area", "fieldtype": "Data" },
+    { "fieldname": "building_name", "fieldtype": "Data" },
+    { "fieldname": "total_units", "fieldtype": "Int" },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "options": "Active\nInactive"
+    },
+    { "fieldname": "vat_applicable", "fieldtype": "Check", "default": 1 }
+  ]
+}

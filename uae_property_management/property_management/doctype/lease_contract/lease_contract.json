@@ -1,0 +1,46 @@
+{
+  "doctype": "DocType",
+  "name": "Lease Contract",
+  "autoname": "LC-.YYYY.-.#####",
+  "fields": [
+    {
+      "fieldname": "property",
+      "fieldtype": "Link",
+      "options": "Property",
+      "reqd": 1
+    },
+    { "fieldname": "unit", "fieldtype": "Link", "options": "Unit", "reqd": 1 },
+    {
+      "fieldname": "tenant",
+      "fieldtype": "Link",
+      "options": "Tenant",
+      "reqd": 1
+    },
+    { "fieldname": "lease_start", "fieldtype": "Date", "reqd": 1 },
+    { "fieldname": "lease_end", "fieldtype": "Date", "reqd": 1 },
+    { "fieldname": "lease_duration", "fieldtype": "Int", "read_only": 1 },
+    { "fieldname": "annual_rent", "fieldtype": "Currency", "reqd": 1 },
+    {
+      "fieldname": "payment_frequency",
+      "fieldtype": "Select",
+      "options": "Annual\nSemi-Annual\nQuarterly\nMonthly"
+    },
+    { "fieldname": "vat_applicable", "fieldtype": "Check", "default": 1 },
+    { "fieldname": "vat_rate", "fieldtype": "Float", "default": 5 },
+    { "fieldname": "security_deposit", "fieldtype": "Currency" },
+    { "fieldname": "commission_amount", "fieldtype": "Currency" },
+    {
+      "fieldname": "contract_status",
+      "fieldtype": "Select",
+      "options": "Draft\nActive\nExpired\nTerminated\nCancelled",
+      "default": "Draft"
+    },
+    { "fieldname": "grace_period", "fieldtype": "Int", "default": 0 },
+    {
+      "fieldname": "renewal_of",
+      "fieldtype": "Link",
+      "options": "Lease Contract"
+    },
+    { "fieldname": "notes", "fieldtype": "Small Text" }
+  ]
+}

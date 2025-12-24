@@ -1,0 +1,13 @@
+{
+  "chart_name": "Bounced Cheques Count",
+  "doctype": "Dashboard Chart",
+  "is_standard": "Yes",
+  "chart_type": "Line",
+  "document_type": "Post Dated Cheque",
+  "timespan": "Last Year",
+  "time_interval": "Monthly",
+  "value_based_on": "",
+  "filters_json": "{\"status\":\"Bounced\"}",
+  "module": "Property Management",
+  "type": "Dashboard Chart"
+}

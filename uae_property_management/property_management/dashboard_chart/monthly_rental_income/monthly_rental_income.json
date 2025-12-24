@@ -1,0 +1,13 @@
+{
+  "chart_name": "Monthly Rental Income",
+  "doctype": "Dashboard Chart",
+  "is_standard": "Yes",
+  "chart_type": "Bar",
+  "document_type": "Sales Invoice",
+  "timespan": "Last Year",
+  "time_interval": "Monthly",
+  "value_based_on": "grand_total",
+  "filters_json": "{\"docstatus\":1}",
+  "module": "Property Management",
+  "type": "Dashboard Chart"
+}

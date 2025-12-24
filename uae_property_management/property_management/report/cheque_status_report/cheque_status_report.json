@@ -1,0 +1,8 @@
+{
+  "report_name": "Cheque Status Report",
+  "doctype": "Post Dated Cheque",
+  "is_standard": "Yes",
+  "report_type": "Script Report",
+  "ref_doctype": "Post Dated Cheque",
+  "module": "Property Management"
+}
