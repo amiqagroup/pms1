@@ -1,0 +1,3 @@
+include README.md
+recursive-include uae_property_management *.py *.json *.md *.txt
+recursive-include uae_property_management/public *
