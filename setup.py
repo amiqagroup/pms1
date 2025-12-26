@@ -6,7 +6,7 @@ setup(
     description="Leasing-focused property management for UAE",
     long_description=open(
         "README.md", encoding="utf-8").read() if __name__ == "__main__" else "",
-    packages=find_packages(exclude=("tests",)),
+    packages=find_packages(),
     include_package_data=True,
     install_requires=[
         "frappe>=15.0.0,<17.0.0",
