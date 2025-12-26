@@ -1,3 +1,4 @@
+import frappe
 from frappe.utils import getdate, add_months
 
 FREQUENCY_MONTHS = {
